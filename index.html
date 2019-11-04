@@ -1,38 +1,13 @@
 <html>
     <header>
         <title>Portifolio Julio</title>
-        <meta UTF-8>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
         <link href="css/principal.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
         <script src="https://kit.fontawesome.com/d9c369bd27.js"></script> 
-
-
-        <script>
-             imagens = ['imagens/login.png', 'imagens/geral.png' ];
-
-            $(document).ready(function(){
-
-                $(".btn_anterior").click(function(){
-                    let id_imagem  = $("#aula_1").attr("value");
-                    let x = parseInt( id_imagem) - 1;
-                        if( x <= 0){
-                            x = (imagens.length() - 1);
-                        } 
-                    alert("clico-> " +  'x-> '+x+',' + imagens[x]);
-                    // $("#aula").html('');
-                    $("#aula").html('<img id="aula" value="'+x+'"  src="'+imagens[x]+'" width="600px" height="400px" alt="">')
-                });
-                $(".btn_proximo").click(function(){
-                    let id_imagem  = $("#aula_1").attr("value");
-                    let x = parseInt( id_imagem) + 1;
-                    alert("clico-> " +  imagens[x]);
-                    // $("#aula").html('');
-                    $("#aula").html('<img id="aula" value="'+x+'"  src="'+imagens[x]+'" width="600px" height="400px" alt="">')
-                });
-
-            });
-        </script>
+       
     </header>
     
   <body>
@@ -94,100 +69,100 @@
 
         <div class="area_trabalho">
             
-          
-                <div class="content">
-                        <div class="noma_projeto"><div>OminiStek_19</div></div> 
+        
+            <div class="content">
+                <div class="noma_projeto" ><div>OminiStek_19</div></div> 
+                <div class="slide">
+                    <button class="btn_anterior"id="ominiSteck_19-ant" > <i class="fas fa-chevron-left"></i> </button>
+                    <button class="btn_proximo" id="ominiSteck_19-prox"> <i class="fas fa-chevron-right"></i> </button>
+                    <div id="aula">
+                        <img id ='ominiSteck_19'  value="0"  src="imagens/login.png">
+                    </div>
+                </div>
+                <div class="descricao_projeto">
+                    <strong>Descrição:</strong>
+                    <p>Projeto feito a partir da aulas da Rocketseat na semana ominiStek, para as tecnologias NodeJs, React e React Native </p>
+                    <strong>tecnologias</strong>
+                    <p>NodeJS, React, MongoDB</p>
+                    <button> <a href="https://github.com/juliobissoli/ominiSteck_19"> Acessar <i class="fab fa-github"></i></a></button>
+                </div>
+            </div>
+
+
+                <!-- <div class="content">
+                        <div class="noma_projeto"><div>Portifolio Estilizado</div></div> 
                         <div class="slide">
                             <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
                             <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
                             <div id="aula">
-                                <img id="aula_1" value="0"  src="imagens/login.png" alt="">
+                                <img id="" value="0"  src="imagens/layout.png" alt="">
                             </div>
                         </div>
                         <div class="descricao_projeto">
                                 <strong>Descrição:</strong>
-                                <p>Projeto feito a partir da aulas da Rocketseat na semana ominiStek, para as tecnologias NodeJs, React e React Native </p>
+                                <p>Pagina para mostrar meus projetos</p>
                                 <strong>tecnologias</strong>
-                                <p>NodeJS, React, MongoDB</p>
-                                <button> <a href="https://github.com/juliobissoli/ominiSteck_19"> Acessar <i class="fab fa-github"></i></a></button>
+                                <p>JavaScript, CSS, HTHL</p>
+                                <button> <a href="https://github.com/juliobissoli/Portifolio_Estilizado"> Acessar <i class="fab fa-github"></i></a></button>
                             </div>
-                    </div>
+                </div>
 
-
-                    <div class="content">
-                            <div class="noma_projeto"><div>Portifolio Estilizado</div></div> 
-                            <div class="slide">
-                                <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
-                                <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
-                                <div id="aula">
-                                    <img id="aula_1" value="0"  src="imagens/layout.png" alt="">
-                                </div>
+                <div class="content">
+                        <div class="noma_projeto"><div>Ponto Eletronico Sysuni</div></div> 
+                        <div class="slide">
+                            <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
+                            <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
+                            <div id="aula">
+                                <img id="" value="0"  src="imagens/sysuni.png" alt="">
                             </div>
-                            <div class="descricao_projeto">
-                                    <strong>Descrição:</strong>
-                                    <p>Pagina para mostrar meus projetos</p>
-                                    <strong>tecnologias</strong>
-                                    <p>JavaScript, CSS, HTHL</p>
-                                    <button> <a href="https://github.com/juliobissoli/Portifolio_Estilizado"> Acessar <i class="fab fa-github"></i></a></button>
-                                </div>
-                    </div>
-
-                    <div class="content">
-                            <div class="noma_projeto"><div>Ponto Eletronico Sysuni</div></div> 
-                            <div class="slide">
-                                <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
-                                <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
-                                <div id="aula">
-                                    <img id="aula_1" value="0"  src="imagens/sysuni.png" alt="">
-                                </div>
-                            </div>
-                            <div class="descricao_projeto">
-                                    <strong>Descrição:</strong>
-                                    <p>Sistema de ponto eletrônico</p>
-                                    <strong>tecnologias</strong>
-                                    <p>JavaScript, Jquery, PHP, MySQL, CSS, HTHL</p>
-                                    <button> <a href="https://github.com/juliobissoli/Ponto_eletronico_sysuni"> Acessar <i class="fab fa-github"></i></a></button>
-                                    
-                                </div>
-                    </div>
-
-                    <div class="content">
-                            <div class="noma_projeto"><div>View-Suporte</div></div> 
-                            <div class="slide">
-                                <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
-                                <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
-                                <div id="aula">
-                                    <img id="aula_1" value="0"  src="imagens/viwe-suporte.png" alt="">
-                                </div>
-                            </div>
-                            <div class="descricao_projeto">
-                                    <strong>Descricão:</strong>
-                                    <p>Frontend do novo site do suporte/LAR (Laboratório de administração de redes UFES)</p>
-                                    <strong>tecnologias</strong>
-                                    <p>PHP, JavaScriptm Jquery, CSS, HTML</p>
-                                    <button> <a href="https://github.com/juliobissoli/view-suporte"> Acessar <i class="fab fa-github"></i></a></button>
-                                   
-                                </div>
                         </div>
-
-
-                        <div class="content">
-                                <div class="noma_projeto"><div>Trabalho ENG.Soft (Alugator)</div></div> 
-                                <div class="slide">
-                                    <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
-                                    <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
-                                    <div id="aula">
-                                        <img id="aula_1" value="0"  src="imagens/alugator.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="descricao_projeto">
-                                        <strong>Descrica:</strong>
-                                        <p>Frontebd do projeto da plataforma web gerado para o trabalho</p>
-                                        <strong>tecnologias</strong>
-                                        <p>PHP, JavaScriptm Jquery, CSS, HTML</p>
-                                        <button>Acessar <i class="fab fa-github"></i></button>
-                                    </div>
+                        <div class="descricao_projeto">
+                                <strong>Descrição:</strong>
+                                <p>Sistema de ponto eletrônico</p>
+                                <strong>tecnologias</strong>
+                                <p>JavaScript, Jquery, PHP, MySQL, CSS, HTHL</p>
+                                <button> <a href="https://github.com/juliobissoli/Ponto_eletronico_sysuni"> Acessar <i class="fab fa-github"></i></a></button>
+                                
                             </div>
+                </div>
+
+                <div class="content">
+                        <div class="noma_projeto"><div>View-Suporte</div></div> 
+                        <div class="slide">
+                            <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
+                            <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
+                            <div id="aula">
+                                <img id="" value="0"  src="imagens/viwe-suporte.png" alt="">
+                            </div>
+                        </div>
+                        <div class="descricao_projeto">
+                                <strong>Descricão:</strong>
+                                <p>Frontend do novo site do suporte/LAR (Laboratório de administração de redes UFES)</p>
+                                <strong>tecnologias</strong>
+                                <p>PHP, JavaScriptm Jquery, CSS, HTML</p>
+                                <button> <a href="https://github.com/juliobissoli/view-suporte"> Acessar <i class="fab fa-github"></i></a></button>
+                                
+                            </div>
+                    </div>
+
+
+                <div class="content">
+                        <div class="noma_projeto"><div>Trabalho ENG.Soft (Alugator)</div></div> 
+                        <div class="slide">
+                            <button class="btn_anterior"> <i class="fas fa-chevron-left"></i> </button>
+                            <button class="btn_proximo"> <i class="fas fa-chevron-right"></i> </button>
+                            <div id="aula">
+                                <img id="" value="0"  src="imagens/alugator.png" alt="">
+                            </div>
+                        </div>
+                        <div class="descricao_projeto">
+                                <strong>Descrica:</strong>
+                                <p>Frontebd do projeto da plataforma web gerado para o trabalho</p>
+                                <strong>tecnologias</strong>
+                                <p>PHP, JavaScriptm Jquery, CSS, HTML</p>
+                                <button>Acessar <i class="fab fa-github"></i></button>
+                            </div>
+                    </div> -->
                    
             </div>
 
@@ -201,5 +176,5 @@
         </div>
 
     </body>
-  
+
 </html>

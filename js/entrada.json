@@ -1,0 +1,48 @@
+[
+    {
+        "id": "0",
+        "nome": "OminiStek_19",
+        "descricao": "Projeto feito a partir da aulas da Rocketseat na semana ominiStek, para as tecnologias NodeJs, React e React Native",
+        "tecnologias": "NodeJS, React, MongoDB",
+        "imagens" :  ["imagens/0-0.png", "imagens/0-1.png"],
+        "link_git": "https://github.com/juliobissoli/ominiSteck_19"
+    },
+
+    {
+        "id": "1",
+        "nome": "Portifolio Estilizado",
+        "descricao": "Pagina para mostrar meus projetos",
+        "tecnologias": "JavaScript, CSS, HTHL",
+        "imagens" :  ["imagens/1-0.png", "imagens/1-1.png", "imagens/1-2.png"],        
+        "link_git": "https://github.com/juliobissoli/Portifolio_Estilizado"
+
+    },
+
+    {
+        "id": "2",
+        "nome": "Ponto Eletronico Sysuni",
+        "descricao": "Sistema de ponto eletrônico",
+        "tecnologias": "JavaScript, Jquery, PHP, MySQL, CSS, HTHL",
+        "imagens" :  ["imagens/2-0.png", "imagens/2-1.jpg"],        
+        "link_git": "https://github.com/juliobissoli/Ponto_eletronico_sysuni"
+
+    },
+    {
+        "id": "3",
+        "nome": "View-Suporte",
+        "descricao": "Frontend do novo site do suporte/LAR (Laboratório de administração de redes UFES)",
+        "tecnologias": "PHP, JavaScriptm Jquery, CSS, HTML",
+        "imagens" :  ["imagens/3-0.png"],        
+        "link_git": "https://github.com/juliobissoli/view-suporte"
+
+    },
+    {
+        "id": "4",
+        "nome": "Trabalho ENG.Soft (Alugator)",
+        "descricao": "Frontebd do projeto da plataforma web gerado para o trabalho",
+        "tecnologias": "PHP, JavaScriptm Jquery, CSS, HTML",
+        "imagens" :  ["imagens/4-0.png"],        
+        "link_git": "https://github.com/juliobissoli/Trabalho_ENG.Soft"
+
+    }
+]
